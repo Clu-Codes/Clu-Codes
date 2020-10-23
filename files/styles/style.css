@@ -2,6 +2,7 @@
     --primary-color: #1a355b;
     --secondary-color: #ebecf0;
     --tertiary-color: #212930;
+    --quarternary-color: #556270;
 }
 * {
     margin: 0;
@@ -68,10 +69,45 @@ header nav ul {
     position: relative;
     left: 35px;
     top: 195px;
+    height: 35px;
 }
 .hero-copy-color {
     color: yellow;
     font-family: serif;
+}
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.happy-border {
+    border-right: 6px solid var(--primary-color);
+    line-height: 80px;
+    width: 10%;
+    margin: 10px;
+    justify-content: start;
+    display: flex;
+    flex-wrap: wrap;
+}
+article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 44%;
+    margin: auto 0 auto 5px;
+    font-size: 17px;
+}
+.about-copy {
+    font-weight: lighter;
+    font-size: 32px;
+    height: 200px;
+    width: 200px;
+    /* transform: skew(30deg, 20deg); */
+    margin-left: 5px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: left;
+    line-height: 1.25;
+    text-transform: uppercase;
 }
 .my-info a:hover {
     border-bottom: 2px solid white;
