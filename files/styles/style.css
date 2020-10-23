@@ -46,17 +46,38 @@ header nav ul {
     list-style: none;
     font-weight: bold;
 }
-header nav ul li {
-
+.hero {
+    background-image: url("../images/pexels-markus-spiske-1089440.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    height: 250px;
+}
+/* Really bad javascript joke */
+.hero-copy {
+    font-size: 26px;
+    color: var(--secondary-color);
+    font-family: serif;
+    font-style: italic;
+    text-align: left;
+    position: relative;
+    left: 35px;
+    top: 195px;
+}
+.hero-copy-color {
+    color: yellow;
+    font-family: serif;
 }
 .my-info a:hover {
     border-bottom: 2px solid white;
     color: white;
 }
-/* header nav ul li a:hover {
-    border-bottom: 2px solid white;
-    color: white;
-} */
+
 body {
     background-color: var(--secondary-color);
     color: var(--tertiary-color);
