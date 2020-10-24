@@ -247,4 +247,23 @@ img {
         justify-content: center;
         position: relative;
     }
+    header h1 {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    header h1::after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        padding-top: 5px;
+        border-bottom: 3px solid var(--tertiary-color);
+    }
+    header nav ul {
+        margin-top: 5px;
+        width: 100%;
+        justify-content: space-around;
+        text-align: center;
+    }
 }
