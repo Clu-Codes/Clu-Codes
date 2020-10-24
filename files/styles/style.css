@@ -138,20 +138,61 @@ article {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: var(--secondary-color);
-    border: 4px solid red;
+    margin: 5px;
 }
 .run-buddy {
     background: url(../assets/images/Run-Buddy_website.png);
     background-size: cover;
 }
+div.run-buddy {
+    position: relative;
+}
+div.run-buddy a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+    text-decoration: none;
+    z-index: 10;
+    background-color: #FFF;
+    opacity: 0;
+}
 .horiseon {
    background: url(../assets/images/Horiseon.io.png);
    background-size: cover;
 }
+div.horiseon {
+    position: relative;
+}
+div.horiseon a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+    text-decoration: none;
+    z-index: 10;
+    background-color: #FFF;
+    opacity: 0;
+}
 .placeholder {
     background: url(../assets/images/Placeholder_img.webp);
     background-size: cover;
+}
+div.placeholder {
+    position: relative;
+}
+div.placeholder a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+    text-decoration: none;
+    z-index: 10;
+    background-color: #FFF;
+    opacity: 0;
 }
 .my-info a:hover {
     border-bottom: 2px solid var(--tertiary-color);
