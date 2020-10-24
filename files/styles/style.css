@@ -14,6 +14,11 @@
     font-family: Oneday, Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+/* Beginning of Header & Nav */
 header a {
     color: var(--secondary-color);
     text-decoration: none;
@@ -28,9 +33,6 @@ header {
 .my-name {
     font-size: 14px;
 }
-/* header nav ul li a:link {
-    text-decoration: none;
-} */
 header nav {
     margin: 7px;
     width: 100%;
@@ -51,34 +53,16 @@ header nav ul {
     list-style: none;
     font-weight: bold;
 }
-/* .hero {
-    background-image: url("../images/pexels-markus-spiske-1089440.jpg");
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    position: relative;
-    height: 250px;
+.my-info {
+    line-height: 1.5;
+    font-size: 13px;
+    letter-spacing: 1.5px;
 }
-/* Really bad javascript joke */
-/* .hero-copy {
-    font-size: 26px;
-    color: var(--secondary-color);
-    font-family: serif;
-    font-style: italic;
-    text-align: left;
-    position: relative;
-    left: 35px;
-    top: 195px;
-    height: 35px;
+.my-info a:hover {
+    border-bottom: 2px solid var(--tertiary-color);
+    color: white;
 }
-.hero-copy-color {
-    color: yellow;
-    font-family: serif;
-} */
+/* Beginning of About Me Section */
 .about-me {
     display: flex;
     flex-wrap: wrap;
@@ -100,26 +84,21 @@ article {
     margin: auto 0 auto 5px;
     font-size: 17px;
 }
-.about-copy {
+.header-text {
     font-weight: lighter;
     font-size: 26px;
     height: 200px;
     width: 200px;
-    /* transform: skew(30deg, 20deg); */
     margin-left: 5px;
     writing-mode: vertical-lr;
     text-orientation: upright;
     text-align: left;
     line-height: 1.25;
-    text-transform: uppercase;
 }
+/* Beginning of Portfolio Section */
 .work {
     display: flex;
     flex-wrap: wrap;
-}
-.work-copy {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
 }
 .work-grid-wrapper {
     display: flex;
@@ -194,30 +173,30 @@ div.placeholder a {
     background-color: #FFF;
     opacity: 0;
 }
-.my-info a:hover {
-    border-bottom: 2px solid var(--tertiary-color);
-    color: white;
+/* Beginning of Contact Me Section */
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
 }
-
-body {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .resources {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 300px;
-    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
     margin: 5px;
     list-style: none;
-    width: 80%;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 22px;
 }
-.resource-1, .resource-2, .resource-3, .resource-4 {
-    border-bottom: 2px solid black;
-    margin-bottom: 25px;
+.resource-1, .resource-2, .resource-3 {
+    width: 100%;
+    /* height: 0%; */
 }
+
 .contact-me a {
     text-decoration: none;
     color: var(--tertiary-color);
