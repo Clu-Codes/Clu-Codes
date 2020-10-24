@@ -119,6 +119,10 @@ article {
     justify-content: space-around;
     margin: 5px;
 }
+/* Hide Text on Desktop */
+.portfolio-name {
+    visibility: hidden;
+}
 .run-buddy {
     background: url(../assets/images/Run-Buddy_website.png);
     background-size: cover;
@@ -231,4 +235,10 @@ img {
     flex-wrap: wrap;
     border: 0;
     object-fit: cover;
+}
+@media screen and (max-width: 860px) {
+    header {
+        justify-content: center;
+        position: relative;
+    }
 }
