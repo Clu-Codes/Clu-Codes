@@ -2,7 +2,6 @@
     --primary-color: black /* #1a355b */;
     --secondary-color: #D3D3D3 /* #ebecf0 */; 
     --tertiary-color: #cd8032 /* #212930 */;
-    /* --quarternary-color: #556270; */
 }
 @font-face {
     font-family: Oneday;
@@ -110,8 +109,6 @@ article {
     line-height: 1.5;
     font-size: 13px;
     letter-spacing: 1.5px;
-    /* font-size: 17px;
-    margin: auto 0 auto 5px; */
 }
 /* Beginning of Portfolio Section */
 .work {
@@ -141,7 +138,6 @@ article {
 }
 /* Hide Text on Desktop */
 .portfolio-name {
-    /* z-index: -1; */
     position: relative;
     top: 200px;
     margin: 0 0 3px 4px;
@@ -172,7 +168,6 @@ div.run-buddy a {
 }
 .grid-container-item:hover .portfolio-name {
     position: relative;
-    /* background: var(--tertiary-color); */
     opacity: .9;
     top: 0;
 }
@@ -226,7 +221,6 @@ div.placeholder a {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /* justify-content: center; */
     margin: 5px;
     list-style: none;
     font-size: 22px;
@@ -234,7 +228,6 @@ div.placeholder a {
 .resource-1, .resource-2, .resource-3 {
     width: 100%;
 }
-
 .contact-me a {
     text-decoration: none;
     color: var(--tertiary-color);
@@ -333,12 +326,6 @@ img {
         justify-content: center;
         width: 80%;
     }
-    /* .my-info {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-    } */
     .work {
         display: flex;
         flex-wrap: wrap;
