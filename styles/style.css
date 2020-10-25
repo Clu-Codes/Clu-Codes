@@ -145,9 +145,6 @@ article {
     text-shadow: 0 0 10px;
     transition: .75s;
 }
-.portfolio-name:hover {
-    position: relative;
-}
 .run-buddy {
     background: url(../assets/images/Run-Buddy_website.png);
     background-size: cover;
@@ -336,7 +333,7 @@ img {
         grid-template: repeat(3, 200px) / 1fr;
     }
     .portfolio-name {
-        z-index: 1;
+        top: 0;
     }
     .contact-me {
         justify-content: center;
