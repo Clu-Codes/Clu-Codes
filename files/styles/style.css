@@ -45,7 +45,6 @@ header h1 {
     flex-wrap: wrap;
     color: var(--secondary-color);
     font-size: 28px;
-    /* padding: 0 80px 0 0; */
     width: 60%;
 }
 header nav ul {
@@ -62,6 +61,7 @@ header nav ul {
 header nav ul li a:hover {
     border-bottom: 2px solid var(--tertiary-color);
     color: white;
+    text-shadow: 0 0 10px;
 }
 /* Beginning of About Me Section */
 .about-me {
@@ -78,12 +78,23 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
 }
+.my-image {
+    background: no-repeat center url(../assets/images/Clu-Codes-1.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 275px;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 10px;
+}
 article {
     display: flex;
     flex-wrap: wrap;
     width: 44%;
     margin: auto 0 auto 5px;
     font-size: 17px;
+    position: relative;
 }
 .section-header-text {
     font-size: 26px;
@@ -99,6 +110,8 @@ article {
     line-height: 1.5;
     font-size: 13px;
     letter-spacing: 1.5px;
+    /* font-size: 17px;
+    margin: auto 0 auto 5px; */
 }
 /* Beginning of Portfolio Section */
 .work {
@@ -121,11 +134,15 @@ article {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    justify-content: flex-start;
     margin: 5px;
+    align-items: flex-end;
 }
 /* Hide Text on Desktop */
 .portfolio-name {
-    visibility: hidden;
+    z-index: -1;
+    margin: 0 0 3px 4px;
+    color: black;
 }
 .run-buddy {
     background: url(../assets/images/Run-Buddy_website.png);
@@ -137,12 +154,18 @@ div.run-buddy {
 div.run-buddy a {
     position: absolute;
     width: 100%;
+    height: 100%;
     top: 0;
     left: 0%;
     text-decoration: none;
     z-index: 10;
     background-color: #FFF;
     opacity: 0;
+}
+.grid-container-item:hover {
+    position: relative;
+    /* background: var(--tertiary-color); */
+    opacity: .9;
 }
 .horiseon {
    background: url(../assets/images/Horiseon.io.png);
@@ -154,6 +177,7 @@ div.horiseon {
 div.horiseon a {
     position: absolute;
     width: 100%;
+    height: 100%;
     top: 0;
     left: 0%;
     text-decoration: none;
@@ -171,6 +195,7 @@ div.placeholder {
 div.placeholder a {
     position: absolute;
     width: 100%;
+    height: 100%;
     top: 0;
     left: 0%;
     text-decoration: none;
@@ -292,9 +317,18 @@ img {
         text-align: center;
         line-height: 1.25;
     }
-    .my-info {
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         width: 80%;
     }
+    /* .my-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    } */
     .work {
         display: flex;
         flex-wrap: wrap;
@@ -303,6 +337,9 @@ img {
     }
     .work-grid-container {
         grid-template: repeat(3, 200px) / 1fr;
+    }
+    .portfolio-name {
+        z-index: 1;
     }
     .contact-me {
         justify-content: center;
@@ -318,9 +355,9 @@ img {
     .resource-1, .resource-2, .resource-3 {
         width: 20%;
     }
-    .resource-2 {
+    /* .resource-2 {
         padding-left: 12px;
-    }
+    } */
 }
 
 
