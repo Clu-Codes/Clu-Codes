@@ -1,0 +1,371 @@
+:root {
+    --primary-color: black /* #1a355b */;
+    --secondary-color: #D3D3D3 /* #ebecf0 */; 
+    --tertiary-color: #cd8032 /* #212930 */;
+    /* --quarternary-color: #556270; */
+}
+@font-face {
+    font-family: Oneday;
+    src: url(../assets/fonts/ONEDAY/ONEDAY.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Oneday, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+/* Beginning of Header & Nav */
+header a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    padding: 15px 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.my-name {
+    font-size: 14px;
+}
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 7px;
+    width: 100%;
+    text-decoration: none;
+}
+header h1 {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--secondary-color);
+    font-size: 28px;
+    width: 60%;
+}
+header nav ul {
+    color: var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: right;
+    font-size: 14px;
+    list-style: none;
+    font-weight: bold;
+    width: 40%;
+}
+header nav ul li a:hover {
+    border-bottom: 2px solid var(--tertiary-color);
+    color: white;
+    text-shadow: 0 0 10px;
+}
+/* Beginning of About Me Section */
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.happy-border {
+    border-right: 6px solid var(--tertiary-color);
+    line-height: 80px;
+    width: 10%;
+    margin: 10px;
+    justify-content: start;
+    display: flex;
+    flex-wrap: wrap;
+}
+.my-image {
+    background: no-repeat center url(../assets/images/Clu-Codes-1.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 275px;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 10px;
+}
+article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 44%;
+    margin: auto 0 auto 5px;
+    font-size: 17px;
+    position: relative;
+}
+.section-header-text {
+    font-size: 26px;
+    height: 300px;
+    width: 200px;
+    margin-left: 25px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: center;
+    line-height: 1.25;
+}
+.my-info {
+    line-height: 1.5;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    /* font-size: 17px;
+    margin: auto 0 auto 5px; */
+}
+/* Beginning of Portfolio Section */
+.work {
+    display: flex;
+    flex-wrap: wrap;
+}
+.work-grid-wrapper {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.work-grid-container {
+    display: grid;
+    width: 100%;
+    justify-content: space-between;
+    grid-template-columns: 4fr 2fr 2fr;
+    grid-template-rows: 3fr repeat(2 1fr);
+}
+.grid-container-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: flex-start;
+    margin: 5px;
+    align-items: flex-end;
+    overflow: hidden;
+}
+/* Hide Text on Desktop */
+.portfolio-name {
+    /* z-index: -1; */
+    position: relative;
+    top: 200px;
+    margin: 0 0 3px 4px;
+    color: black;
+    text-shadow: 0 0 10px;
+    transition: .75s;
+}
+.portfolio-name:hover {
+    position: relative;
+}
+.run-buddy {
+    background: url(../assets/images/Run-Buddy_website.png);
+    background-size: cover;
+}
+div.run-buddy {
+    position: relative;
+}
+div.run-buddy a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+    text-decoration: none;
+    z-index: 10;
+    background-color: #FFF;
+    opacity: 0;
+}
+.grid-container-item:hover .portfolio-name {
+    position: relative;
+    /* background: var(--tertiary-color); */
+    opacity: .9;
+    top: 0;
+}
+.horiseon {
+   background: url(../assets/images/Horiseon.io.png);
+   background-size: cover;
+}
+div.horiseon {
+    position: relative;
+}
+div.horiseon a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+    text-decoration: none;
+    z-index: 10;
+    background-color: #FFF;
+    opacity: 0;
+}
+.placeholder {
+    background: url(../assets/images/Placeholder_img.webp);
+    background-size: cover;
+}
+div.placeholder {
+    position: relative;
+}
+div.placeholder a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+    text-decoration: none;
+    z-index: 10;
+    background-color: #FFF;
+    opacity: 0;
+}
+/* Beginning of Contact Me Section */
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.resources {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 5px;
+    list-style: none;
+    font-size: 22px;
+}
+.resource-1, .resource-2, .resource-3 {
+    width: 100%;
+}
+
+.contact-me a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+.contact-me a:hover {
+    border-bottom: 2px solid var(--secondary-color);
+    text-shadow: 0 0 10px;
+}
+.contact-me a:visited {
+    color: #E3B778;
+}
+.design {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 35px;
+    width: 100%;
+}
+footer {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+img {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    border: 0;
+    object-fit: cover;
+    margin-top: -10px;
+}
+@media screen and (max-width: 800px) {
+    header {
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    header h1::after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        padding-top: 5px;
+        border-bottom: 3px solid var(--tertiary-color);
+    }
+    header nav ul {
+        margin-top: 5px;
+        width: 100%;
+        justify-content: space-around;
+        text-align: center;
+    }
+    header nav ul li {
+        width: 20%;
+    }
+    .about-me {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .happy-border {
+        display: flex;
+        flex-wrap: wrap;
+        border-right: hidden;
+        border-bottom: 3px solid var(--tertiary-color);
+        width: 80%;
+        margin: 10px;
+        justify-content: center;  
+    }
+    .section-header-text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 26px;
+        height: auto;
+        width: 100%;
+        writing-mode: horizontal-tb;
+        margin-left: 0;
+        text-align: center;
+        line-height: 1.25;
+    }
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+    }
+    /* .my-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    } */
+    .work {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .work-grid-container {
+        grid-template: repeat(3, 200px) / 1fr;
+    }
+    .portfolio-name {
+        z-index: 1;
+    }
+    .contact-me {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .contact-links {
+        width: 80%;
+    }
+    .resources {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .resource-1, .resource-2, .resource-3 {
+        width: 20%;
+    }
+}
+
+
+
