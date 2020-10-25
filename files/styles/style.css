@@ -137,12 +137,20 @@ article {
     justify-content: flex-start;
     margin: 5px;
     align-items: flex-end;
+    overflow: hidden;
 }
 /* Hide Text on Desktop */
 .portfolio-name {
-    z-index: -1;
+    /* z-index: -1; */
+    position: relative;
+    top: 200px;
     margin: 0 0 3px 4px;
     color: black;
+    text-shadow: 0 0 10px;
+    transition: .75s;
+}
+.portfolio-name:hover {
+    position: relative;
 }
 .run-buddy {
     background: url(../assets/images/Run-Buddy_website.png);
@@ -162,10 +170,11 @@ div.run-buddy a {
     background-color: #FFF;
     opacity: 0;
 }
-.grid-container-item:hover {
+.grid-container-item:hover .portfolio-name {
     position: relative;
     /* background: var(--tertiary-color); */
     opacity: .9;
+    top: 0;
 }
 .horiseon {
    background: url(../assets/images/Horiseon.io.png);
@@ -232,6 +241,7 @@ div.placeholder a {
 }
 .contact-me a:hover {
     border-bottom: 2px solid var(--secondary-color);
+    text-shadow: 0 0 10px;
 }
 .contact-me a:visited {
     color: #E3B778;
@@ -355,9 +365,6 @@ img {
     .resource-1, .resource-2, .resource-3 {
         width: 20%;
     }
-    /* .resource-2 {
-        padding-left: 12px;
-    } */
 }
 
 
