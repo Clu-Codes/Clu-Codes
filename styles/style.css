@@ -141,18 +141,18 @@ article {
     position: relative;
     top: 200px;
     margin: 0 0 3px 4px;
-    color: black;
+    color: white;
     text-shadow: 0 0 10px;
     transition: .75s;
 }
-.run-buddy {
-    background: url(../assets/images/Run-Buddy_website.png);
+.dungeons-end {
+    background: url(../assets/images/Dungeons_End_Project.png);
     background-size: cover;
 }
-div.run-buddy {
+div.dungeons-end {
     position: relative;
 }
-div.run-buddy a {
+div.dungeons-end a {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -186,14 +186,14 @@ div.horiseon a {
     background-color: #FFF;
     opacity: 0;
 }
-.placeholder {
-    background: url(../assets/images/Placeholder_img.webp);
+.run-buddy {
+    background: url(../assets/images/Run-Buddy_website.png);
     background-size: cover;
 }
-div.placeholder {
+div.run-buddy {
     position: relative;
 }
-div.placeholder a {
+div.run-buddy a {
     position: absolute;
     width: 100%;
     height: 100%;
