@@ -1,0 +1,35 @@
+* {
+    background-color: black;
+    color: #ffffff;
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+a {
+    text-decoration: none!important;
+}
+header nav {
+    width: 100%;
+    padding: 25px 100px;
+    top: 0px;
+}
+header nav ul {
+    list-style: none;
+    text-align: left;
+    padding: 0px;
+    text-align: left;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 17px;
+}
+
+header nav ul li:first-child {
+    margin-left: 0px;
+}
+
+.linkedIn {
+    height: 32px;
+    width: 32px;
+}
