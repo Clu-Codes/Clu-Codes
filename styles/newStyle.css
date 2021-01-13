@@ -28,6 +28,28 @@ header nav ul li {
 header nav ul li:first-child {
     margin-left: 0px;
 }
+h1 {
+    font-size: 100px;
+}
+footer {
+    max-width: 800px;
+    margin: auto;
+    border-top: 1px solid #85d0fc;
+    margin-top: 40px;
+    position: relative;
+}
+footer ul {
+    list-style: none;
+    text-align: center;
+}
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+footer ul li a:hover {
+    color: #85d0fc;
+    text-decoration: underline;
+}
 
 .linkedIn {
     height: 32px;
