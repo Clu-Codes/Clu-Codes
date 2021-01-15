@@ -4,6 +4,7 @@
 }
 body {
     font-family: "Lato", sans-serif;
+    
 }
 a {
     text-decoration: none!important;
@@ -24,19 +25,35 @@ header nav ul li {
     padding: 0px 20px;
     font-size: 17px;
 }
+header nav ul li a:hover {
+    color: #85d0fc;
+    text-decoration: underline;
+}
 
 header nav ul li:first-child {
     margin-left: 0px;
 }
 h1 {
-    font-size: 100px;
+    position: absolute;
+    font-size: 4.5rem;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, 30%);
+}
+.center {
+    position: relative;
+    top: 30%;
+    left: 50%;
 }
 footer {
-    max-width: 800px;
-    margin: auto;
+    width: 55vw;
+    margin: 3rem 0;
     border-top: 1px solid #85d0fc;
     margin-top: 40px;
-    position: relative;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 30%);
 }
 footer ul {
     list-style: none;
@@ -46,10 +63,7 @@ footer ul li {
     display: inline-block;
     margin-right: 20px;
 }
-footer ul li a:hover {
-    color: #85d0fc;
-    text-decoration: underline;
-}
+
 
 .linkedIn {
     height: 32px;

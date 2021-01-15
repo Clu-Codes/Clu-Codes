@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Lato", sans-serif;
+    color: #ffffff;
+}
+.landing-page{
+    background: url('../assets/images/port_background.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    opacity: 85%;
+}
+a {
+    text-decoration: none!important;
+    color: #ffffff;
+}
+header nav {
+    width: 90%;
+    padding: 15px 75px;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul {
+    padding: 0px;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 17px;
+}
+header nav ul li a:hover {
+    color: #85d0fc;
+    text-decoration: underline;
+}
+h1 {
+    position: absolute;
+    font-size: 4.5rem;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, 30%);
+}
+ .center {
+    position: relative;
+    top: 30%;
+    left: 50%;
+}
+/* footer {
+    width: 55vw;
+    margin: 3rem 0;
+    border-top: 1px solid #85d0fc;
+    margin-top: 40px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+} */
+/* footer ul {
+    list-style: none;
+    text-align: center;
+}
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+} */
+
+
+.linkedIn {
+    height: 24px;
+    width: 24px;
+    /* text-align: right; */
+}
+.github {
+    height: 24px;
+    width: 24px;
+    /* text-align: right; */
+}

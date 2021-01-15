@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    /* font-family: "Lato", sans-serif; */
+    font-family: 'Dancing Script', cursive;
+    color: #ffffff;
+}
+.landing-page {
+    background: url('../assets/images/charles-deluvio-ieEv01cucy0-unsplash.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    font-family: 'Fraunces', serif;
+    /* font-family: "Limelight", sans-serif; */
+    color: #ffffff;
+}
+.body-div {
+    height: 100vh;
+    width: auto;
+}
+.center-texts {
+    position: absolute;
+    font-size: 4.5rem;
+    top: 15%;
+    left: 45%;
+    transform: translate(-70%, -50%);
+}
+.center-body-text {
+    position: absolute;
+    font-size: 3rem;
+    top: 19%;
+    left: 20%;
+    /* transform: translate(-70%, -50%); */
+}
+a {
+    text-decoration: none!important;
+    color: #ffffff;
+}
+header nav {
+    width: 90%;
+    padding: 15px 75px;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul {
+    padding: 0px;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 20px;
+}
+header nav ul li a:hover {
+    color: #85d0fc;
+    text-decoration: underline;
+}
+/* h1 {
+    position: absolute;
+    font-size: 4.5rem;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, 30%);
+} */
+.linkedIn {
+    height: 24px;
+    width: 24px;
+    /* text-align: right; */
+}
+.github {
+    height: 24px;
+    width: 24px;
+    /* text-align: right; */
+}
