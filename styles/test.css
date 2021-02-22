@@ -26,12 +26,14 @@ header {
     top: 15%;
     left: 45%;
     transform: translate(-70%, -50%);
+    text-shadow: 1px 1px black;
 }
 .center-body-text {
     position: absolute;
     font-size: 3rem;
     top: 19%;
     left: 20%;
+    text-shadow: 1px 1px black;
     /* transform: translate(-70%, -50%); */
 }
 a {
@@ -54,16 +56,9 @@ header nav ul li {
     font-size: 20px;
 }
 header nav ul li a:hover {
-    color: #85d0fc;
-    text-decoration: underline;
+    text-shadow: 2px 2px black;
+    
 }
-/* h1 {
-    position: absolute;
-    font-size: 4.5rem;
-    top: 20%;
-    left: 30%;
-    transform: translate(-50%, 30%);
-} */
 .linkedIn {
     height: 24px;
     width: 24px;

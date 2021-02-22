@@ -168,14 +168,14 @@ div.dungeons-end a {
     opacity: .9;
     top: 0;
 }
-.horiseon {
-   background: url(../assets/images/Horiseon.io.png);
+.something-special {
+   background: url(../assets/images/something_special.png);
    background-size: cover;
 }
-div.horiseon {
+div.something-special {
     position: relative;
 }
-div.horiseon a {
+div.something-special a {
     position: absolute;
     width: 100%;
     height: 100%;
