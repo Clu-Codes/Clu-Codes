@@ -145,15 +145,14 @@ article {
     text-shadow: 0 0 10px;
     transition: .75s;
 }
-.dungeons-end {
-    background: url(../assets/images/something_special.png);
-  
+.something-special {
+    background: url(../assets/images/Something_Special.png);
     background-size: cover;
 }
-div.dungeons-end {
+div.something-special {
     position: relative;
 }
-div.dungeons-end a {
+div.something-special a {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -164,19 +163,21 @@ div.dungeons-end a {
     background-color: #FFF;
     opacity: 0;
 }
+
 .grid-container-item:hover .portfolio-name {
     position: relative;
     opacity: .9;
     top: 0;
+    color: yellow;
 }
-.something-special {
+.dungeons-end {
     background: url(../assets/images/Dungeons_End_Project.png);
    background-size: cover;
 }
-div.something-special {
+div.dungeons-end {
     position: relative;
 }
-div.something-special a {
+div.dungeons-end a {
     position: absolute;
     width: 100%;
     height: 100%;
