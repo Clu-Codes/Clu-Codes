@@ -1,0 +1,24 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "## Purpose Personal portfolio containing an about me, contact information, and demonstrations of work from Connor Cluster.",
+  "main": "index.js",
+  "dependencies": {
+    "masonry-layout": "^4.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clu-Codes/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Clu-Codes/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Clu-Codes/Portfolio#readme"
+}

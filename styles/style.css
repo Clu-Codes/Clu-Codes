@@ -146,7 +146,8 @@ article {
     transition: .75s;
 }
 .dungeons-end {
-    background: url(../assets/images/Dungeons_End_Project.png);
+    background: url(../assets/images/something_special.png);
+  
     background-size: cover;
 }
 div.dungeons-end {
@@ -169,7 +170,7 @@ div.dungeons-end a {
     top: 0;
 }
 .something-special {
-   background: url(../assets/images/something_special.png);
+    background: url(../assets/images/Dungeons_End_Project.png);
    background-size: cover;
 }
 div.something-special {
